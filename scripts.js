@@ -7,12 +7,11 @@ zmienne a i h na osobne nawiasy i połaczyć operatorem to mi wyskakuje błąd s
 
 */
 
- function getTriangleArea (a, h){
+ function getTriangleArea(a, h) {
 
- 	if (a || h <= 0) {
- 		alert('nieprawidłowe dane');
+ 	if (a <= 0 || h <= 0) {
 
- 		return;
+ 		return 'nieprawidłowe dane';
  	}
 
 	return a * h / 2;
@@ -22,9 +21,9 @@ zmienne a i h na osobne nawiasy i połaczyć operatorem to mi wyskakuje błąd s
 
  
 
- var triangle1Area = getTriangleArea (-2, 2); 
- var triangle2Area = getTriangleArea (4, -4); 
- var triangle3Area = getTriangleArea (6, 6); 
+ var triangle1Area = getTriangleArea(-2, 2); 
+ var triangle2Area = getTriangleArea(4, -4); 
+ var triangle3Area = getTriangleArea(6, 6); 
 
  alert(triangle1Area);
  alert(triangle2Area);
